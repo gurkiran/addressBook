@@ -45,7 +45,7 @@ refresh();
   $scope.addContact = function(){
     var cont = $scope.contact;
     if( Object.keys(cont).length < 3){
-      alert('Please enter detials !');
+      alert('Please enter details !');
     } else {
       $http.post('/contactList', $scope.contact).success(function(response){
 

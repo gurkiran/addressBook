@@ -6,7 +6,9 @@ var Contact = require('./models/contactList');
 console.log("ankit");
 var app = express();
 
-mongoose.connect('mongodb://localhost/contact');
+// mongoose.connect('mongodb://localhost/contact');
+
+mongoose.connect('mongodb://gurkiran:mlab12@ds059471.mlab.com:59471/addressbook');
 
 var db = mongoose.connection;
 
@@ -31,7 +33,7 @@ app.get('/contactList', function(req, res){
 });
 
 app.post('/contactList', function(req, res){
-
+    console.log(req.body);
     var newContact = req.body;
     Contact.create(newContact, function(err, contact){
       if(err) {
