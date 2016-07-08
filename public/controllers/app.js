@@ -1,32 +1,5 @@
 var myApp = angular.module('myApp',[]);
 
-// myApp.config(function($routeProvider){
-//   $routeProvider
-//
-//   .when('/first', {
-//         templateUrl:'../first.html',
-//         controller:'mainController'
-//   })
-//   .when('/second', {
-//         templateUrl:'../second.html',
-//         controller:'secondController'
-//   })
-//   .when('/third', {
-//         templateUrl:'../third.html',
-//         controller:'thirdController'
-//   })
-//   .when('/fourth', {
-//         templateUrl:'../fourth.html',
-//         controller:'fourthController'
-//   })
-//   .when('/fifth', {
-//         templateUrl:'../fifth.html',
-//         controller:'fifthController'
-//   })
-//
-// });
-
-
 myApp.controller('mainController',['$scope', '$http', function($scope,$http){
 
 $scope.sortField = 'name';

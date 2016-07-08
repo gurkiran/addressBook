@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var Contact = require('./models/contactList');
 
-console.log("ankit");
 var app = express();
 
 // mongoose.connect('mongodb://localhost/contact');
@@ -74,6 +73,6 @@ app.put('/contactList/:id', function(req, res){
   });
 });
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 app.listen(port);
 console.log('server started ...');
